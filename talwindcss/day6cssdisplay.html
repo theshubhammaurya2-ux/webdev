@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        *{
+            background-color: black;
+            color:aliceblue;
+        }
+        h1{
+            background-color: rgb(232, 255, 127);
+            color:blue;
+            display: inline;
+
+            /* display: none;  element gayab aure uska jagah bhi */
+           /* visibility:hidden;  element gayab auree uska jagah waise jhi rahega */
+        }
+        span{
+            background-color: yellow;
+            color:red;
+            display:block;
+            /* display: contents;  background divisible */
+        }
+        .pos1{
+            width:150px;
+            height:150px;
+            background-color: blue;
+            position:sticky;
+            top:5rem;
+           
+        }
+        .pos2{
+            width:150px;
+            height:150px;
+            background-color: yellowgreen;
+            position:relative;   /* move element wrt to other */
+            top:150px;
+            left: 100px;
+          /*   position:absolute;  move witout any neighbour 
+            top:0px; 
+            right:0px;
+            left: 100px; 
+        */
+        }
+        .container{
+            width:100px;
+            height:100px;
+            background-color: red;
+            position:absolute;
+            left:0px;
+            bottom:0px;
+            
+        }
+        .pos3{
+            width:100px;
+            height:100px;
+            background-color: red;
+            position:fixed;
+             left:400px;
+        }
+        .pos4{
+            width:200px;
+            height:200px;
+            background-color: red;
+            position: relative;
+          top:200px;
+            left:800px;
+
+        }
+        .pos4 .contain{
+             width:100px;
+            height:100px;
+            background-color: green;
+            position:sticky;
+            top:0px;
+         
+        }
+    </style>
+</head>
+<body>
+    <h1>The Shubham Maurya</h1><br>
+    <span>shubham</span>
+    <div class="pos1"></div>
+    <div class="pos2">
+        <div class="container"></div>
+    </div>
+    <div class="pos3"></div>
+    <div class="pos4">
+        <div class="contain"></div>
+    </div>
+
+</body>
+</html>
